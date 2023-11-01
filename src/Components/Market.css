@@ -1,0 +1,118 @@
+.red{
+ color: red;
+}
+.green{
+    color: green;
+}
+
+.market{
+    width: 100%;
+    padding: 8rem auto;
+}
+
+.market .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 4rem;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2rem;
+    text-align: center;
+
+}
+.heading .p{
+    margin:1.5rem 0;
+    line-height: 1rem;
+}
+.heading h3{
+    line-height: 6rem;
+    font-size: 22px;
+}
+.heading .btn{
+    align-self: flex-start;
+}
+.coins{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+
+.card{
+  display: flex ;
+  flex-direction: column;
+  padding: 12px 24px;
+  margin: .4rem;
+  width: 170px;
+  height: 170px;
+  border-radius: 24px;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+ box-shadow: rgb(0 0 0 /12%) 0px 8px 24px;
+ 
+}
+
+.card:hover{
+    box-shadow: rgba(143, 141, 141, 0.3) 0px 8px 24px;
+    transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+.heading .btn{
+    margin-left: 14rem;
+    margin-top: 3rem;
+    padding: 10px 26px 20px 35px;
+    font-size: 20px;
+}
+
+.icon{
+ font-size: 30px;
+ margin: auto;
+ padding-top: 6px;
+ justify-content: center;
+ align-items: center;
+}
+
+.market span{
+    font-size: 20px;
+}
+
+.img-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.coins img{
+    width: 60px;
+    margin:auto;
+    padding: .2rem 0;
+}
+
+@media screen and (max-width: 940px) {
+    .market .container{
+        grid-template-columns: 1fr;
+    }
+    .market .heading .btn{
+        align-self: center;
+    }
+
+    .heading .btn{
+        font-size: 20px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 478px) {
+
+    .market .container .coins .card{
+        width: 100%;
+    }
+}

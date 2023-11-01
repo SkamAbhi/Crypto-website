@@ -1,0 +1,118 @@
+:root{
+  --background: linear-gradient(0deg,#191b27,#10121d);
+  --text-primary:#fff;
+  --text-styled:rgb(166 167 173);
+  --button:orange;
+  --card: rgb(32 35 51);
+}
+
+[data-theme='dark'] {
+  --background:#fff;
+  --text-primary:#000;
+  --text-styled:#000;
+  --card: rgb(233, 235, 247);
+}
+
+
+
+@import url('https://fonts.google.com/specimen/Poppins');
+body {
+  font-family: -apple-system, BlinkMacSystemFont,'Poppins', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   background:var(--background)
+   
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-primary);
+  scrollbar-width: none;
+  transition: all 0.5s ease-in-out;
+}
+#root{
+  overflow: hidden;
+}
+
+ul{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+h1{
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+h2{
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+h5{
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+p{
+  font-size: 1.2rem;
+}
+
+.btn{
+  padding: 14px 32px;
+  border:1px solid orange;
+  background-color: var(--button);
+  color: #fff;
+  border-radius: 24px 4px;
+  font-size: 1.1 rem;
+  font-weight: 700;
+  cursor: pointer;
+
+}
+.btn:hover{
+  box-shadow: rgba(245, 168, 132, 0.15) 0px 8px 24px;
+}
+
+@media screen and (max-width:860px) {
+  
+h1{
+  font-size: 2.1rem;
+  line-height: 1.2;
+}
+
+h2{
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+h5{
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+p{
+  font-size: 1rem;
+} 
+
+
+.btn{
+  width: 100%;
+  margin: 1 rem 0;
+}
+
+}

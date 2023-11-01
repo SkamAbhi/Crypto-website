@@ -1,0 +1,42 @@
+.hero .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-left: 5rem;
+   
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+ .hero-details{
+    font-size: 27px;
+    margin-top: 22px;
+    margin-bottom: 26px;
+ }
+.hero .img-container{
+    width: 100%;
+    display: flex;
+}
+
+.hero img {
+    max-width: 80%;
+    margin: auto;
+
+}
+
+.hero .btn{
+    font-size: 20px;
+    
+}
+
+@media screen and (max-width:840px) {
+
+    .hero .container{
+        grid-template-columns: 1fr;
+        margin: 1rem 0;
+    }
+    
+}
+
